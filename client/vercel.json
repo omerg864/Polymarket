@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/api/:match*",
-			"destination": "https://flow-budget-api.vercel.app/api/:match*"
+			"destination": "https://omer-polymarket-api.vercel.app/api/:match*"
 		},
 		{
 			"source": "/:path((?!.*\\..*).*)",
