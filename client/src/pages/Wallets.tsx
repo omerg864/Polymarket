@@ -23,7 +23,7 @@ import { z } from 'zod';
 
 const walletSchema = z.object({
 	address: z.string().min(1),
-	label: z.string().optional(),
+	label: z.string(),
 });
 
 export default function Wallets() {
