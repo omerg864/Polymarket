@@ -13,9 +13,9 @@ export default defineConfig({
 		VitePWA({
 			registerType: 'autoUpdate',
 			manifest: {
-				name: 'Flow',
-				short_name: 'Flow',
-				description: 'Flow - for better financial awareness',
+				name: 'Polymarket Tracker',
+				short_name: 'Polymarket',
+				description: 'Polymarket Tracker - for better market awareness',
 				theme_color: '#213547',
 				background_color: '#213547',
 				icons: [
