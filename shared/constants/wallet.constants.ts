@@ -1,0 +1,1 @@
+export const WALLET_LABEL_MAX_LENGTH = 100;

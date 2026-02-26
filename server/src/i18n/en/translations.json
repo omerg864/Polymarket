@@ -1,0 +1,48 @@
+{
+  "errorMessages": {
+    "common": {
+      "unauthorized": "Not authenticated",
+      "forbidden": "Access denied"
+    },
+    "user": {
+      "notFound": "User not found"
+    },
+    "wallet": {
+      "notFound": "Wallet not found",
+      "accessDenied": "You do not have access to this wallet"
+    },
+    "position": {
+      "notFound": "Position not found",
+      "accessDenied": "You do not have access to this position"
+    }
+  },
+  "templates": {
+    "verification": {
+      "subject": "Verify your email address",
+      "title": "Verify your email",
+      "greeting": "Hello {name}",
+      "message": "Thanks for signing up! Please verify your email address to get started.",
+      "button": "Verify Email",
+      "footer": "If you didn't create an account, you can safely ignore this email."
+    },
+    "resetPassword": {
+      "subject": "Reset your password",
+      "title": "Reset Your Password",
+      "greeting": "Hello {name}",
+      "message": "We received a request to reset your password. Click the button below to choose a new one.",
+      "button": "Reset Password",
+      "footer": "If you didn't request a password reset, you can safely ignore this email."
+    },
+    "newPositions": {
+      "subject": "New positions detected on Polymarket",
+      "title": "New Positions Detected",
+      "greeting": "Hi {name}",
+      "message": "We detected {count} new position(s) on your tracked wallets:",
+      "walletLabel": "Wallet",
+      "stanceLabel": "Stance",
+      "sizeLabel": "Size",
+      "avgPriceLabel": "Avg Price",
+      "footer": "This is an automated notification from Polymarket Tracker."
+    }
+  }
+}

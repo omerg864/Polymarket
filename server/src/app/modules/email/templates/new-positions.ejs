@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 8px; }
+        h2 { color: #1a1a2e; }
+        .position-card { background-color: #f8f9fa; border-left: 4px solid #007bff; padding: 12px 16px; margin-bottom: 12px; border-radius: 4px; }
+        .position-title { font-weight: bold; color: #1a1a2e; margin-bottom: 4px; font-size: 14px; }
+        .position-details { font-size: 13px; color: #555; }
+        .position-details span { margin-right: 16px; }
+        .stance-yes { color: #28a745; font-weight: bold; }
+        .stance-no { color: #dc3545; font-weight: bold; }
+        .footer { margin-top: 20px; font-size: 0.8em; color: #666; }
+        .wallet-label { font-size: 12px; color: #888; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><%= t('templates.newPositions.title') %></h2>
+        <p><%= t('templates.newPositions.greeting', { args: { name } }) %>,</p>
+        <p><%= t('templates.newPositions.message', { args: { count: positions.length } }) %></p>
+
+        <% positions.forEach(function(pos) { %>
+            <div class="position-card">
+                <div class="wallet-label"><%= t('templates.newPositions.walletLabel') %>: <%= pos.walletLabel || pos.walletAddress %></div>
+                <div class="position-title"><%= pos.title || pos.conditionId %></div>
+                <div class="position-details">
+                    <span><%= t('templates.newPositions.stanceLabel') %>: <span class="<%= pos.stance === 'Yes' ? 'stance-yes' : 'stance-no' %>"><%= pos.stance %></span></span>
+                    <span><%= t('templates.newPositions.sizeLabel') %>: <%= pos.size %></span>
+                    <% if (pos.avgPrice != null) { %>
+                        <span><%= t('templates.newPositions.avgPriceLabel') %>: $<%= pos.avgPrice.toFixed(2) %></span>
+                    <% } %>
+                </div>
+            </div>
+        <% }); %>
+
+        <div class="footer">
+            <p><%= t('templates.newPositions.footer') %></p>
+        </div>
+    </div>
+</body>
+</html>

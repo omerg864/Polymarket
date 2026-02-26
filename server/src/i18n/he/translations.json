@@ -1,0 +1,48 @@
+{
+  "errorMessages": {
+    "common": {
+      "unauthorized": "לא מחובר",
+      "forbidden": "הגישה נדחתה"
+    },
+    "user": {
+      "notFound": "משתמש לא נמצא"
+    },
+    "wallet": {
+      "notFound": "ארנק לא נמצא",
+      "accessDenied": "אין לך הרשאת גישה לארנק זה"
+    },
+    "position": {
+      "notFound": "פוזיציה לא נמצאה",
+      "accessDenied": "אין לך הרשאת גישה לפוזיציה זו"
+    }
+  },
+  "templates": {
+    "verification": {
+      "subject": "אימות כתובת האימייל שלך",
+      "title": "אימות אימייל",
+      "greeting": "שלום {name}",
+      "message": "תודה שנרשמת! אנא אמת את כתובת האימייל שלך כדי להתחיל.",
+      "button": "אימות אימייל",
+      "footer": "אם לא יצרת חשבון, ניתן להתעלם מהודעה זו בביטחון."
+    },
+    "resetPassword": {
+      "subject": "איפוס סיסמה",
+      "title": "איפוס הסיסמה שלך",
+      "greeting": "שלום {name}",
+      "message": "קיבלנו בקשה לאיפוס הסיסמה שלך. לחץ על הכפתור למטה כדי לבחור סיסמה חדשה.",
+      "button": "איפוס סיסמה",
+      "footer": "אם לא ביקשת איפוס סיסמה, ניתן להתעלם מהודעה זו בביטחון."
+    },
+    "newPositions": {
+      "subject": "פוזיציות חדשות זוהו בפולימרקט",
+      "title": "🔔 פוזיציות חדשות זוהו",
+      "greeting": "היי {name}",
+      "message": "זיהינו {count} פוזיציות חדשות בארנקים שלך:",
+      "walletLabel": "ארנק",
+      "stanceLabel": "עמדה",
+      "sizeLabel": "גודל",
+      "avgPriceLabel": "מחיר ממוצע",
+      "footer": "זוהי הודעה אוטומטית מ-Polymarket Tracker."
+    }
+  }
+}
